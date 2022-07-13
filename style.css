@@ -386,7 +386,7 @@
     .CM1 .d ,.CM2 .d,.CM3 .d,.CM4 .d{
          grid-area: d;
          text-align: left;
-         margin-left: -15%;
+         
          margin-top: -5%;
          font-size: 20px;
          color: black;
@@ -395,11 +395,12 @@
         grid-area: i;
         margin-top: 5px;
         border-radius: 20%;
+        margin-left: 5px;
    }
    .CM1 .t1 ,.CM2 .t2,.CM3 .t3,.CM4 .t4{
     grid-area: h6;
     text-align: left;
-    margin-left: -15%;
+    
     margin-top: 1%;
     height: 10px;
     background-color:#e4f8f3;
