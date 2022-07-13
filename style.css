@@ -420,12 +420,123 @@
         border-radius: 50%;
     }
     .bluebox h3{
-        font-size: 10px;
+        font-size: 15px;
         margin-left: 5px;
     }
     .container{
         padding-left: 5%;
         padding-right: 0;
+        grid-template-columns:  1fr 2fr 1fr;
+        grid-template-rows:  0.25fr 0.10fr 0.30fr 2fr 1fr ;
+        grid-template-areas:
+         "nav nav  nav "
+         "bluebox bluebox bluebox"
+         "content7 content7 content7"
+         "main main main"
+         "main main main"
+         "Mobile-contents Mobile-contents Mobile-contents";
+       grid-gap: 1rem;
+     
+    } 
+    .content7{
+        grid-area: content7;
+        display :grid;
+        background-color: white;
+        border-radius: 10px;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 30% 70%;
+        
+        grid-template-areas: 
+        "i1 d1"
+        "i1 sd";
+    }
+    .i1{margin-left: 10px;
+        grid-area: i1;
+        margin-top:10px;
+        border-radius: 50%;
+    }
+    .d1{
+        margin-left: -10%;
+        grid-area:d1 ;
+        font-size:20px;
+        text-align: left;
+        color: black;
+    }
+    .sd{text-align: left;
+        margin-left: -10%;
+        grid-area:sd ;
+        margin-top: 20px;
+        color: #cccccc;
+        font-size: medium;
+    
+    }
+    .Mobile-contents{
+        grid-area: Mobile-contents;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+    .CM1 ,.CM2,.CM3 , .CM4{display :grid;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 30% 70%;
+        grid-template-areas: 
+        "i h6"
+        "i d";
+    }
+    .CM1 .d ,.CM2 .d,.CM3 .d,.CM4 .d{
+         grid-area: d;
+         text-align: left;
+         margin-left: -40px;
+         margin-top: -1%;
+         font-size: 25px;
+         color: black;
+    }
+    .CM1 .i ,.CM2 .i,.CM3 .i,.CM4 .i{
+        grid-area: i;
+        margin-top: 5px;
+        border-radius: 20%;
+        margin-left: 5px;
+   }
+   .CM1 .t1 ,.CM2 .t2,.CM3 .t3,.CM4 .t4{
+    grid-area: h6;
+    text-align: left;
+    margin-left: -40px;
+    margin-top: 4%;
+    height: 10px;
+    font-size: medium;
+    background-color:#e4f8f3;
+}
+.CM1 .t1 {width: 30px;color: purple;}.CM2 .t2{width: 25px; color: orangered;}.CM3 .t3{width: 25px;color: #0ff883;}.CM4 .t4{width: 28px;color: red;}
+}
+@media only screen and (max-width: 450px) {
+    nav  li a{
+        display: none;
+    }
+    .items{
+        display: none;
+    }
+    
+    #content1 , #content2 , #content3 ,#content4{
+        display: none;
+    }
+    .bluebox{
+        grid-area: bluebox;
+        display: flex;
+        background-color: #c1f8e7;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .bluebox img{
+        border-radius: 50%;
+    }
+    .bluebox h3{
+        font-size: 10px;
+        margin-left: 5px;
+        font-size: small;
+    }
+    .container{
+        padding-left: 8%;
+        padding-right:0px;
         grid-template-columns:  1fr 2fr 1fr;
         grid-template-rows:  0.25fr 0.10fr 0.30fr 2fr 1fr ;
         grid-template-areas:
@@ -459,20 +570,21 @@
         grid-area:d1 ;
         font-size: 15px;
         text-align: left;
-        color: black;
+        margin-left: 10px;
     }
     .sd{text-align: left;
         grid-area:sd ;
         margin-top: 20px;
         color: #cccccc;
-        font-size: xx-small;
-    
+        font-size: small;
+        margin-left: 10px;
     }
     .Mobile-contents{
         grid-area: Mobile-contents;
         display: flex;
         flex-direction: column;
-        height: 150px;
+        
+        padding: 2px;
     }
     .CM1 ,.CM2,.CM3 , .CM4{display :grid;
         grid-template-columns: 30% 70%;
@@ -484,7 +596,7 @@
     .CM1 .d ,.CM2 .d,.CM3 .d,.CM4 .d{
          grid-area: d;
          text-align: left;
-         margin-left: -20%;
+         margin-left:1px;
          margin-top: -5%;
          font-size: 20px;
          color: black;
@@ -493,18 +605,16 @@
         grid-area: i;
         margin-top: 5px;
         border-radius: 20%;
-        margin-left: 5px;
    }
    .CM1 .t1 ,.CM2 .t2,.CM3 .t3,.CM4 .t4{
     grid-area: h6;
     text-align: left;
-    margin-left: -20%;
+    margin-left: 1px;
     margin-top: 1%;
     height: 10px;
     background-color:#e4f8f3;
 }
-.CM1 .t1 {width: 30px;color: purple;}.CM2 .t2{width: 25px; color: orangered;}.CM3 .t3{width: 25px;color: #0ff883;}.CM4 .t4{width: 28px;color: red;}
-}
+.CM1 .t1 {width: 30px;color: purple;}.CM2 .t2{width: 25px; color: orangered;}.CM3 .t3{width: 25px;color: #0ff883;}.CM4 .t4{width: 28px;color: red;}}
 @media only screen and (max-width: 400px) {
     nav  li a{
         display: none;
@@ -566,13 +676,14 @@
         grid-area:d1 ;
         font-size: 15px;
         text-align: left;
+        margin-left: 10px;
     }
     .sd{text-align: left;
         grid-area:sd ;
         margin-top: 20px;
         color: #cccccc;
         font-size: xx-small;
-    
+        margin-left: 10px;
     }
     .Mobile-contents{
         grid-area: Mobile-contents;
