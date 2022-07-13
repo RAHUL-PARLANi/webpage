@@ -373,8 +373,7 @@
         grid-area: Mobile-contents;
         display: flex;
         flex-direction: column;
-        
-        padding: 2px;
+        height: 150px;
     }
     .CM1 ,.CM2,.CM3 , .CM4{display :grid;
         grid-template-columns: 30% 70%;
