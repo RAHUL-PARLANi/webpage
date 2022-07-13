@@ -307,6 +307,7 @@
     .items{
         display: none;
     }
+    .down-arrow, .down-arrow1 , .down-arrow2{display: none;}
     
     #content1 , #content2 , #content3 ,#content4{
         display: none;
