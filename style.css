@@ -299,6 +299,103 @@
     margin: 1rem;
   }
   
+  @media only screen and (max-width: 1150px){
+    #content5 {
+        margin-top:30px;
+        background: white;
+        grid-area: content5;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        display: flex;
+        height: inherit;
+        padding-bottom: 2px;
+        }
+        .items{
+            grid-area: items;
+            display: grid;
+            padding: 5PX;
+            margin-bottom: -60px;
+            grid-template-columns: 14% 59%;
+            grid-template-rows: 32% 21%;
+            grid-template-areas:
+              "img h3"
+              "img h6"
+           
+        }
+        
+        .items h3 {
+               grid-area: h3;
+               text-align: left;
+               margin-left:50%;
+               font-size: 14px;
+               color: black;
+               
+          }
+          .items img {
+               grid-area: img;
+               border-radius: 50%;
+               margin-top: 10px;
+               margin-left: 5px;
+               margin-right: 30px;
+          }
+          .items h6 {
+               grid-area: h6;
+               text-align: left;
+               margin-left: 50%;
+               color: grey;
+               font-size: xx-small;
+               margin-top: 40px;
+              }
+  }
+  
+ @media only screen and (max-width: 850px){
+    #content5 {
+        margin-top:30px;
+        background: white;
+        grid-area: content5;
+        border-radius: var(--main-radius);
+        padding-top: var(--main-padding);
+        display: flex;
+        height: inherit;
+        padding-bottom: 2px;
+        }
+        .items{
+            grid-area: items;
+            display: grid;
+            padding: 5PX;
+            margin-bottom: -60px;
+            grid-template-columns: 14% 59%;
+            grid-template-rows: 32% 21%;
+            grid-template-areas:
+              "img h3"
+              "img h6"
+           
+        }
+        
+        .items h3 {
+               grid-area: h3;
+               text-align: left;
+               margin-left:70%;
+               font-size: 10px;
+               color: black;
+               
+          }
+          .items img {
+               grid-area: img;
+               border-radius: 50%;
+               margin-top: 10px;
+               margin-left: 5px;
+               margin-right: 30px;
+          }
+          .items h6 {
+               grid-area: h6;
+               text-align: left;
+               margin-left: 70%;
+               color: grey;
+               font-size: 5px;
+               margin-top: 20px;
+              }
+ }
  
  @media only screen and (max-width: 640px) {
     nav  li a{
