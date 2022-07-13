@@ -130,7 +130,7 @@
     grid-area: main;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background-image: url("/woman-g6fd0fb37e_640.jpg");
+    background-image: url("/images/woman-g6fd0fb37e_640.jpg");
     background-color: #cccccc; 
     position: relative;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@
     grid-area: content1;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background-image: url("/woman-g9beb0c17a_640.jpg");
+    background-image: url("/images/woman-g9beb0c17a_640.jpg");
     background-color: #cccccc; 
     position: relative;
     background-repeat: no-repeat;
@@ -211,7 +211,7 @@
     grid-area: content2;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background-image: url("/smart-watch-g45f5eaee0_640.jpg");
+    background-image: url("/images/smart-watch-g45f5eaee0_640.jpg");
     background-color: #cccccc; 
     position: relative;
     background-repeat: no-repeat;
@@ -255,7 +255,7 @@
     grid-area: content3;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background-image: url("/apple-gf8e92c703_640.jpg");
+    background-image: url("/images/apple-gf8e92c703_640.jpg");
     background-color: #cccccc; 
     position: relative;
     background-repeat: no-repeat;
@@ -266,7 +266,7 @@
     grid-area: content4;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    background-image: url("/beach-g600b8e5ab_640.jpg");
+    background-image: url("/images/beach-g600b8e5ab_640.jpg");
     background-color: #cccccc; 
     position: relative;
     background-repeat: no-repeat;
